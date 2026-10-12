@@ -1,14 +1,14 @@
 <!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>WMPJ-Stolar · Meble na wymiar · Warszawa i okolice</title>
 <meta name="description" content="Stolarz Michał Adamczyk: kuchnie, szafy, garderoby, łóżka, meble stylizowane, pergole, altany i meble ogrodowe na wymiar. Pomiar, projekt, wykonanie i montaż. Warszawa Wawer i okolice.">
-<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#DCE6D0;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-/* Układ: biała strona i prawdziwe zdjęcia. Drewno tylko jako detal: listwa na górze, drewniana miarka jako separator, ramka wokół zdjęcia w hero, kafelek logo. Jeden motyw, zawsze biały. */
+/* Układ: zielone tło z zarysem słoi drewna, na nim białe "deski" z treścią. Drewno jako detal: listwa na górze, drewniana miarka jako separator, ramka wokół rysunku. Jeden motyw. */
 :root{
-  --bg:#FFFFFF; --surface:#F7F5F1; --ink:#1F1A15; --muted:#6A5F55; --line:#E4DED5;
+  --page:#DCE6D0; --bg:#FFFFFF; --surface:#FAFBF7; --ink:#1F1A15; --muted:#5F6356; --line:#D5DCCB;
   --accent:#B9791F; --dim:#A39A8F;
   --display:"Archivo","Arial Narrow",system-ui,sans-serif;
   --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -18,7 +18,7 @@
   --oak:#CFAF7F; --beech:#DCC49C; --walnut:#3A2719;
 }
 *{box-sizing:border-box}
-body{background:var(--bg) url("img/sloje.svg") center top/1600px auto repeat;color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--page) url("img/sloje.svg") center top/1600px auto repeat;color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4vw,32px)}
 h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;text-wrap:balance}
 h2{font-size:clamp(1.9rem,4.2vw,2.9rem);font-weight:800;font-stretch:112%;letter-spacing:-.01em}
@@ -45,7 +45,7 @@ a{color:inherit}
 
 /* nagłówek */
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
-.hero{background-color:var(--bg)}
+.hero{background-color:var(--page)}
 header.top::before{content:"";display:block;height:7px;background:var(--beech) var(--wood-beech,none) center/auto 100% repeat-x;border-bottom:1px solid rgba(60,40,20,.35)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
 .brand{display:flex;align-items:center;gap:16px;min-width:0}
@@ -76,7 +76,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .hero{position:relative;isolation:isolate;min-height:clamp(540px,72vh,780px);display:grid;align-items:center;
   background:#EEE9E2 url("img/hero-b.jpg") center/cover no-repeat}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.96) 36%,rgba(255,255,255,.7) 50%,rgba(255,255,255,0) 66%)}
+  background:url("img/sloje.svg") center top/1600px auto repeat,linear-gradient(90deg,rgba(220,230,208,1) 0%,rgba(220,230,208,.97) 36%,rgba(220,230,208,.72) 50%,rgba(220,230,208,0) 66%);background-blend-mode:multiply,normal}
 .hero .wrap{width:100%;padding-block:clamp(48px,8vw,96px)}
 .hero .inner{max-width:38rem}
 .hero h1{font-size:clamp(2.9rem,7.5vw,6rem);font-weight:900;font-stretch:118%;letter-spacing:-.025em;line-height:.98}
@@ -99,6 +99,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:-44px 0 40px;position:relative;z-index:1}
 .menu a{position:relative;display:block;aspect-ratio:3/2;overflow:hidden;border-radius:2px;text-decoration:none;color:#fff;background:var(--surface);box-shadow:0 10px 30px -12px rgba(30,18,6,.45)}
 .menu img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.menu img[src$="altana.jpg"],.tile img[src$="altana.jpg"]{object-position:center 40%}
 .menu a:hover img{transform:scale(1.04)}
 .menu span{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(0,0,0,.7));font-family:var(--display);font-weight:800;font-stretch:110%;font-size:1.15rem;line-height:1.1}
 .menu span small{display:block;font:500 .72rem var(--mono);letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin-top:4px}
@@ -106,6 +107,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 
 /* proces z rysunkiem obok */
 .steps-sec .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(28px,5vw,64px);align-items:center}
+.steps{background:var(--bg);padding:clamp(20px,3vw,32px);border:1px solid var(--line)}
 .steps-sec .sec-head{grid-column:1/-1;margin-bottom:8px}
 @media (max-width:860px){.steps-sec .wrap{grid-template-columns:1fr}}
 .bench{min-width:0;padding:12px;background:var(--beech) var(--wood-beech,none) center/auto 100% repeat-x;border-radius:2px;
@@ -151,6 +153,7 @@ section{padding-block:clamp(48px,7vw,88px)}
 /* proces */
 .steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .step{border-top:3px solid var(--ink);padding-top:16px;display:grid;gap:8px;align-content:start}
+.sec-head p{color:var(--ink)}
 .step .n{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
 .step p{color:var(--muted);font-size:.95rem}
 @media (max-width:480px){.steps{grid-template-columns:1fr}}
@@ -182,7 +185,7 @@ section{padding-block:clamp(48px,7vw,88px)}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chips span{font-size:.85rem;border:1px solid var(--line);background:var(--bg);padding:3px 10px;border-radius:2px}
 
-footer{padding-block:28px 40px;font-size:.9rem;color:var(--muted)}
+footer{padding-block:28px 40px;font-size:.9rem;color:var(--muted);background:var(--bg)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
 footer .btn{padding:8px 14px}
 .logo-v{height:96px;width:auto;display:block}
@@ -233,7 +236,7 @@ footer .btn{padding:8px 14px}
       <a href="#uslugi"><img src="img/komoda.jpg" alt=""><span>Meble stylizowane<small>komody, kredensy, renowacja</small></span></a>
       <a href="#uslugi"><img src="img/lozko.jpg" alt=""><span>Łóżka<small>z pojemnikiem, wezgłowiem</small></span></a>
       <a href="#uslugi"><img src="img/szafa.jpg" alt=""><span>Meble nietypowe<small>zabudowy, regały, RTV</small></span></a>
-      <a href="#uslugi"><img src="img/pergola.jpg" alt=""><span>Meble do ogrodu<small>pergole, altany, ławki, stoły</small></span></a>
+      <a href="#uslugi"><img src="img/altana.jpg" alt=""><span>Meble do ogrodu<small>altany, pergole, ławki, stoły</small></span></a>
     </nav>
   </div>
 
@@ -366,9 +369,9 @@ footer .btn{padding:8px 14px}
         <figure class="tile t3"><img src="img/lozko.jpg" alt="" loading="lazy"><figcaption>Łóżko z drewnianym wezgłowiem<small>dąb · olej</small></figcaption></figure>
         <figure class="tile t4"><img src="img/szafa.jpg" alt="" loading="lazy"><figcaption>Zabudowa poddasza<small>szafy pod skosem · fornir</small></figcaption></figure>
         <figure class="tile t5"><img src="img/garderoba.jpg" alt="" loading="lazy"><figcaption>Garderoba na wymiar<small>fornir orzech · oświetlenie LED</small></figcaption></figure>
-        <figure class="tile t7"><img src="img/pergola.jpg" alt="" loading="lazy"><figcaption>Pergola przy domu<small>listwy sosnowe · impregnat</small></figcaption></figure>
+        <figure class="tile t7"><img src="img/altana.jpg" alt="" loading="lazy"><figcaption>Altana z ażurowych listew<small>drewno malowane na czarno · podest z kostki</small></figcaption></figure>
         <figure class="tile t8"><img src="img/komoda.jpg" alt="" loading="lazy"><figcaption>Komoda z przeszkleniem<small>toczone nóżki · lakier</small></figcaption></figure>
-        <figure class="tile t9"><img src="img/altana.jpg" alt="" loading="lazy"><figcaption>Altana z ażurowych listew<small>drewno malowane na czarno</small></figcaption></figure>
+        <figure class="tile t9"><img src="img/pergola.jpg" alt="" loading="lazy"><figcaption>Pergola przy domu<small>listwy sosnowe · impregnat</small></figcaption></figure>
         <figure class="tile t6"><img src="img/rtv.jpg" alt="" loading="lazy"><figcaption>Zabudowa RTV<small>MDF lakierowany · panele dębowe</small></figcaption></figure>
         <figure class="tile t10"><img src="img/stol-ogrodowy.jpg" alt="" loading="lazy"><figcaption>Stół z ławkami do ogrodu<small>sosna · olej</small></figcaption></figure>
         <figure class="tile t11"><img src="img/lawka.jpg" alt="" loading="lazy"><figcaption>Ławka ogrodowa<small>świerk · surowe drewno</small></figcaption></figure>
