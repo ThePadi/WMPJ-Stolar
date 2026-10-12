@@ -1,6 +1,6 @@
 <!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>WMPJ-Stolar · Meble na wymiar · Warszawa i okolice</title>
-<meta name="description" content="Stolarz Michał Adamczyk: kuchnie, szafy, garderoby, zabudowy schodów, łóżka i meble ogrodowe na wymiar. Pomiar, projekt, wykonanie i montaż. Warszawa Wawer i okolice.">
+<meta name="description" content="Stolarz Michał Adamczyk: kuchnie, szafy, garderoby, łóżka, meble stylizowane, pergole, altany i meble ogrodowe na wymiar. Pomiar, projekt, wykonanie i montaż. Warszawa Wawer i okolice.">
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
   --oak:#CFAF7F; --beech:#DCC49C; --walnut:#3A2719;
 }
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--bg) url("img/sloje.svg") center top/1600px auto repeat;color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4vw,32px)}
 h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;text-wrap:balance}
 h2{font-size:clamp(1.9rem,4.2vw,2.9rem);font-weight:800;font-stretch:112%;letter-spacing:-.01em}
@@ -45,6 +45,7 @@ a{color:inherit}
 
 /* nagłówek */
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.hero{background-color:var(--bg)}
 header.top::before{content:"";display:block;height:7px;background:var(--beech) var(--wood-beech,none) center/auto 100% repeat-x;border-bottom:1px solid rgba(60,40,20,.35)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
 .brand{display:flex;align-items:center;gap:16px;min-width:0}
@@ -161,8 +162,8 @@ section{padding-block:clamp(48px,7vw,88px)}
 .tile:hover img{transform:scale(1.03)}
 .tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font-size:.9rem}
 .tile figcaption small{display:block;font-family:var(--mono);font-size:.72rem;opacity:.85}
-.t1,.t7{grid-column:span 8;min-height:360px}.t2,.t8{grid-column:span 4;min-height:360px}.t3,.t4,.t5{grid-column:span 4}.t6,.t9{grid-column:span 6;min-height:300px}
-@media (max-width:760px){.gallery{grid-template-columns:1fr 1fr}.t1,.t7{grid-column:span 2;min-height:220px}.t2,.t3,.t4,.t5,.t6,.t8,.t9{grid-column:span 1;min-height:170px}}
+.t1,.t7{grid-column:span 8;min-height:360px}.t2,.t8{grid-column:span 4;min-height:360px}.t3,.t4,.t5{grid-column:span 4}.t6,.t9,.t10,.t11{grid-column:span 6;min-height:300px}
+@media (max-width:760px){.gallery{grid-template-columns:1fr 1fr}.t1,.t7{grid-column:span 2;min-height:220px}.t2,.t3,.t4,.t5,.t6,.t8,.t9,.t10,.t11{grid-column:span 1;min-height:170px}}
 .note{margin-top:14px;font-family:var(--mono);font-size:.78rem;color:var(--muted)}
 
 /* kontakt */
@@ -188,9 +189,9 @@ footer .btn{padding:8px 14px}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
+
 </head>
 <body>
-
 <header class="top">
   <div class="wrap">
     <div class="brand"><a href="#start" class="logo-link"><img class="logo-h" src="img/logo-poziome.svg" alt="WMPJ-Stolar" width="300" height="100"></a><span class="brand-sub">Michał Adamczyk · Meble na wymiar</span></div>
@@ -214,7 +215,7 @@ footer .btn{padding:8px 14px}
       <div class="inner">
         <p class="eyebrow">Stolarz · <span data-area="meble na wymiar"></span></p>
         <h1>Meble na wymiar <em>co do milimetra</em></h1>
-        <p class="lead">Kuchnie, szafy i garderoby, zabudowy schodów, łóżka, a do ogrodu altany, tarasy i meble ogrodowe. Zrobione dokładnie pod Twoje wymiary, z materiału, który sam wybierzesz. Mierzę u Ciebie, robię w warsztacie, montuję i sprzątam po sobie.</p>
+        <p class="lead">Kuchnie, szafy i garderoby, łóżka, meble stylizowane, a do ogrodu pergole, altany, ławki i stoły. Zrobione dokładnie pod Twoje wymiary, z materiału, który sam wybierzesz. Mierzę u Ciebie, robię w warsztacie, montuję i sprzątam po sobie.</p>
         <div class="actions">
           <a class="btn btn-accent" data-tel href="#kontakt">Zadzwoń i umów pomiar</a>
           <a class="btn btn-line" href="#realizacje">Zobacz realizacje</a>
@@ -229,10 +230,10 @@ footer .btn{padding:8px 14px}
     <nav class="menu" aria-label="Co robię">
       <a href="#uslugi"><img src="img/kuchnia.jpg" alt=""><span>Kuchnie<small>na wymiar</small></span></a>
       <a href="#uslugi"><img src="img/garderoba.jpg" alt=""><span>Szafy i garderoby<small>wnęki, skosy, przesuwne</small></span></a>
-      <a href="#uslugi"><img src="img/schody.jpg" alt=""><span>Schody<small>zabudowa i obudowa</small></span></a>
+      <a href="#uslugi"><img src="img/komoda.jpg" alt=""><span>Meble stylizowane<small>komody, kredensy, renowacja</small></span></a>
       <a href="#uslugi"><img src="img/lozko.jpg" alt=""><span>Łóżka<small>z pojemnikiem, wezgłowiem</small></span></a>
       <a href="#uslugi"><img src="img/szafa.jpg" alt=""><span>Meble nietypowe<small>zabudowy, regały, RTV</small></span></a>
-      <a href="#uslugi"><img src="img/altana.jpg" alt=""><span>Meble do ogrodu<small>pergole, altany, tarasy, stoły</small></span></a>
+      <a href="#uslugi"><img src="img/pergola.jpg" alt=""><span>Meble do ogrodu<small>pergole, altany, ławki, stoły</small></span></a>
     </nav>
   </div>
 
@@ -291,10 +292,10 @@ footer .btn{padding:8px 14px}
       </div>
       <div class="services">
         <article class="svc"><img src="img/kuchnia.jpg" alt="Kuchnia z drewnianymi frontami" loading="lazy"><span class="tag">01</span><h3>Kuchnie na wymiar</h3><p>Od jednej ściany po zabudowę w kształcie litery U, z miejscem na AGD do zabudowy.</p><ul><li>fronty lakierowane</li><li>fornir</li><li>blaty</li></ul></article>
-        <article class="svc"><img src="img/schody.jpg" alt="Drewniane stopnie schodów" loading="lazy"><span class="tag">02</span><h3>Zabudowa schodów</h3><p>Obudowa schodów betonowych i szafy pod schodami, które wykorzystują każdy centymetr.</p><ul><li>stopnie i podstopnie</li><li>szuflady pod schodami</li></ul></article>
+        <article class="svc"><img src="img/komoda.jpg" alt="Biała stylizowana komoda z frezowanymi zdobieniami i toczonymi nóżkami" loading="lazy"><span class="tag">02</span><h3>Meble stylizowane</h3><p>Komody, kredensy i witryny w starym stylu: frezowane zdobienia, toczone nóżki, przeszklenia, lakier w wybranym kolorze. Od zera albo jako renowacja Twojego mebla.</p><ul><li>komody i kredensy</li><li>witryny</li><li>renowacja</li><li>zdobienia i frezowania</li></ul></article>
         <article class="svc"><img src="img/lozko.jpg" alt="Łóżko z drewnianym wezgłowiem" loading="lazy"><span class="tag">03</span><h3>Łóżka</h3><p>Łóżka w wymiarze, jakiego potrzebujesz, z pojemnikiem, wezgłowiem lub zabudową wokół.</p><ul><li>pojemnik na pościel</li><li>wezgłowie</li><li>łóżka dziecięce</li></ul></article>
         <article class="svc"><img src="img/szafa.jpg" alt="Zabudowa poddasza z szafami pod skosem" loading="lazy"><span class="tag">04</span><h3>Szafy i meble nietypowe</h3><p>Szafy we wnękach i pod skosem, garderoby, regały, biurka, zabudowy RTV. Wszystko, czego nie ma w katalogu.</p><ul><li>szafy pod skosem</li><li>garderoby</li><li>regały</li><li>zabudowy RTV</li></ul></article>
-        <article class="svc"><img src="img/altana.jpg" alt="Nowa altana z sosnowego drewna z podłogą i ażurową ścianą" loading="lazy"><span class="tag">05</span><h3>Meble do ogrodu</h3><p>Pergole i altany, tarasy, ławki, stoły i donice z drewna zabezpieczonego na deszcz i słońce. Na wymiar Twojego ogrodu.</p><ul><li>pergole i altany</li><li>tarasy</li><li>ławki i stoły</li><li>donice</li></ul></article>
+        <article class="svc"><img src="img/pergola.jpg" alt="Pergola z ażurowych listew przy domu" loading="lazy"><span class="tag">05</span><h3>Meble do ogrodu</h3><p>Pergole i altany z ażurowych listew, ławki, stoły z ławkami, tarasy i donice. Drewno zabezpieczone na deszcz i słońce, na wymiar Twojego ogrodu.</p><ul><li>pergole i altany</li><li>ławki i stoły</li><li>tarasy</li><li>donice</li></ul></article>
         <article class="svc"><img src="img/fornir.jpg" alt="Zbliżenie na fornir dębowy" loading="lazy"><span class="tag">06</span><h3>Obróbka drewna i płyt</h3><p>Cięcie i oklejanie płyt, lakierowanie, fornirowanie. Także dla osób, które mają własny projekt albo własny materiał.</p><ul><li>cięcie płyt</li><li>oklejanie obrzeży</li><li>lakierowanie</li><li>fornirowanie</li></ul></article>
       </div>
     </div>
@@ -329,12 +330,12 @@ footer .btn{padding:8px 14px}
           <div class="body">
             <h3>Płyta fornirowana</h3>
             <p>Na stabilnej płycie cienka warstwa prawdziwego drewna, także egzotycznego. Wygląda jak lite drewno, a nie paczy się i nie pęka tak jak ono.</p>
-            <div class="row"><span>Najlepiej do</span><span>Fronty, schody, łóżka, meble z widocznym drewnem</span></div>
+            <div class="row"><span>Najlepiej do</span><span>Fronty, komody, łóżka, meble z widocznym drewnem</span></div>
             <div class="row"><span>Wykończenie</span><span>Lakier bezbarwny lub bejca</span></div>
           </div>
         </article>
         <article class="matc">
-          <img src="img/lezaki.jpg" alt="Drewniane leżaki na tarasie przy domu w lesie" loading="lazy">
+          <img src="img/stol-ogrodowy.jpg" alt="Stół z ławkami z drewna sosnowego, olejowany" loading="lazy">
           <div class="body">
             <h3>Drewno lite do ogrodu</h3>
             <p>Sosna, świerk, modrzew albo dąb. Impregnowane ciśnieniowo lub olejowane, żeby zniosły deszcz, mróz i słońce przez lata.</p>
@@ -361,16 +362,18 @@ footer .btn{padding:8px 14px}
       <div class="sec-head"><h2>Realizacje</h2><p>Wybrane meble wykonane dla klientów.</p></div>
       <div class="gallery">
         <figure class="tile t1"><img src="img/kuchnia.jpg" alt="" loading="lazy"><figcaption>Kuchnia z frontami w dekorze orzech<small>płyta laminowana · blat drewniany</small></figcaption></figure>
-        <figure class="tile t2"><img src="img/schody.jpg" alt="" loading="lazy"><figcaption>Zabudowa schodów<small>fornir · lakier bezbarwny</small></figcaption></figure>
+        <figure class="tile t2"><img src="img/komoda-bok.jpg" alt="" loading="lazy"><figcaption>Komoda stylizowana<small>lakier kryjący · frezowane rozety</small></figcaption></figure>
         <figure class="tile t3"><img src="img/lozko.jpg" alt="" loading="lazy"><figcaption>Łóżko z drewnianym wezgłowiem<small>dąb · olej</small></figcaption></figure>
         <figure class="tile t4"><img src="img/szafa.jpg" alt="" loading="lazy"><figcaption>Zabudowa poddasza<small>szafy pod skosem · fornir</small></figcaption></figure>
         <figure class="tile t5"><img src="img/garderoba.jpg" alt="" loading="lazy"><figcaption>Garderoba na wymiar<small>fornir orzech · oświetlenie LED</small></figcaption></figure>
-        <figure class="tile t7"><img src="img/taras.jpg" alt="" loading="lazy"><figcaption>Taras z pergolą przy domu<small>deska tarasowa · olej</small></figcaption></figure>
-        <figure class="tile t8"><img src="img/altana.jpg" alt="" loading="lazy"><figcaption>Altana ogrodowa z podłogą<small>sosna · ażurowa ściana · olej</small></figcaption></figure>
-        <figure class="tile t9"><img src="img/lezaki.jpg" alt="" loading="lazy"><figcaption>Leżaki na taras<small>sosna · olej</small></figcaption></figure>
+        <figure class="tile t7"><img src="img/pergola.jpg" alt="" loading="lazy"><figcaption>Pergola przy domu<small>listwy sosnowe · impregnat</small></figcaption></figure>
+        <figure class="tile t8"><img src="img/komoda.jpg" alt="" loading="lazy"><figcaption>Komoda z przeszkleniem<small>toczone nóżki · lakier</small></figcaption></figure>
+        <figure class="tile t9"><img src="img/altana.jpg" alt="" loading="lazy"><figcaption>Altana z ażurowych listew<small>drewno malowane na czarno</small></figcaption></figure>
         <figure class="tile t6"><img src="img/rtv.jpg" alt="" loading="lazy"><figcaption>Zabudowa RTV<small>MDF lakierowany · panele dębowe</small></figcaption></figure>
+        <figure class="tile t10"><img src="img/stol-ogrodowy.jpg" alt="" loading="lazy"><figcaption>Stół z ławkami do ogrodu<small>sosna · olej</small></figcaption></figure>
+        <figure class="tile t11"><img src="img/lawka.jpg" alt="" loading="lazy"><figcaption>Ławka ogrodowa<small>świerk · surowe drewno</small></figcaption></figure>
       </div>
-      <p class="note">Wersja demo: zdjęcia poglądowe. Tu wstawimy zdjęcia Twoich realizacji.</p>
+      <p class="note">Komoda, pergola, altana, stół i ławka to realizacje WMPJ-Stolar. Pozostałe zdjęcia są poglądowe, do podmiany na kolejne realizacje.</p>
     </div>
   </section>
 
@@ -412,7 +415,7 @@ const CONFIG = {
   area: "Warszawa i okolice",
   towns: ["Warszawa Wawer", "Józefów", "Otwock", "Wiązowna", "Sulejówek"],
   address: "Stolarnia: Warszawa Wawer, 04-987",
-  mapUrl: "https://www.google.com/maps/search/?api=1&query=WMPJ-Stolar+Stolarnia+Warszawa",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Wmjp-Stolar+Stolarnia+Warszawa",
   email: "wmpjstolar@gmail.com"
 };
 
